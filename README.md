@@ -1,83 +1,68 @@
-ANALYSIS_OF_IPL_2025_BATTERS
-Overview
-This project analyzes batting performances in the IPL 2025 season using a dataset of 200 players across 10 teams. Each record includes detailed batting metrics such as runs, balls faced, strike rate, boundaries, and milestones, enabling both player-level and team-level performance insights.
+# ANALYSIS_OF_IPL_2025_BATTERS
 
-Dataset
-The dataset ANALYSIS_OF_IPL_2025_BATTERS.csv contains the following key fields:
+## Project Overview
 
-Team name
+This repository presents a data-driven analysis of batting performances in the IPL 2025 season using a structured dataset of 200 players across 10 franchises. The project applies exploratory data analysis and visualization techniques to evaluate individual and team-level batting efficiency, scoring patterns, and milestone achievements. [file:17]
 
-Runs scored
+## Dataset Description
 
-Matches played, innings batted, not-outs
+The dataset `ANALYSIS_OF_IPL_2025_BATTERS.csv` contains one row per player with the following key features: [file:17]
 
-Highest individual score and batting average
+- Team name  
+- Total runs scored  
+- Matches played, innings batted, and not-outs  
+- Highest individual score and batting average  
+- Balls faced and strike rate  
+- Centuries (100s) and fifties (50s)  
+- Number of fours and sixes  
 
-Balls faced and strike rate
+The data covers all 10 IPL 2025 franchises and supports comparison of batting strength, consistency, and aggression across teams. [file:17]
 
-Centuries (100s) and fifties (50s)
+## Analysis Workflow
 
-Fours and sixes
+The Jupyter notebook `ANALYSIS_OF_IPL_2025_BATTERS.ipynb` includes the end-to-end analysis pipeline: [file:17]
 
-The data covers all 10 IPL 2025 franchises and allows comparison of batting strength, consistency, and aggression between teams.
+- Loading and preparing the IPL 2025 batters dataset  
+- Computing team-wise aggregates (total runs, average runs per player, average strike rate, milestones, matches played)  
+- Generating visualizations to study batting performance at player and team level  
+- Interpreting trends in scoring patterns, boundary-hitting, and batting depth  
 
-Notebook
-The Jupyter notebook ANALYSIS_OF_IPL_2025_BATTERS.ipynb performs:
+A concise report in `ANALYSIS_OF_IPL_2025_BATTERS.pdf` documents the methodology, plots, and key insights. [file:17]
 
-Data loading and basic cleaning of the IPL 2025 batters dataset
+## Visualizations
 
-Team-wise aggregation of runs, average runs per player, average strike rate, milestones, and matches played
+Key visual components of the analysis are: [file:17]
 
-Exploratory analysis to understand scoring patterns and batting efficiency across teams
+- **Top run-scorer per team**  
+  - Bar chart highlighting the leading run-scorer for each franchise and their total runs, indicating teams that relied heavily on a single batter.  
 
-Key Analyses and Visualizations
-The analysis focuses on three main visual insights:
+- **Balls faced vs runs scored**  
+  - Scatter plot with a regression line showing a positive relationship between balls faced and runs, and revealing variation in scoring efficiency among players.  
 
-Top run-scorer for each team
+- **Team-wise run distribution**  
+  - Box plot of player runs by team, comparing medians, spread, and outliers to illustrate batting depth and consistency across franchises.  
 
-Bar chart showing the leading run-scorer for every franchise and their total runs, highlighting teams that relied heavily on a single batter.
+## Key Insights
 
-Relationship between balls faced and runs
+Selected findings from the analysis include: [file:17]
 
-Scatter plot with a regression line showing a strong positive relationship between balls faced and runs scored, and revealing differences in scoring efficiency among players.
+- PBKS recorded the highest total runs (3000) and the highest average strike rate (144.91), indicating the strongest overall batting unit.  
+- GT and LSG displayed strong and consistent batting performances, while KKR registered the lowest total runs (1886).  
+- Sai Sudharsan emerged as the tournament’s standout batter with 759 runs.  
+- There is a clear positive correlation between balls faced and runs scored, while variations in strike rate reflect different batting strategies.  
+- RCB registered the most fifties (22), and SRH scored the most centuries (3), highlighting distinct scoring strengths across teams.  
 
-Team-wise run distribution
+## Repository Structure
 
-Box plot of runs for batters in each team, showing median, spread, and outliers to compare batting depth and consistency across franchises.
+- `ANALYSIS_OF_IPL_2025_BATTERS.csv` – IPL 2025 batting dataset for 200 players. [page:14][file:17]  
+- `ANALYSIS_OF_IPL_2025_BATTERS.ipynb` – Jupyter notebook containing the full analysis and visualizations. [page:14]  
+- `ANALYSIS_OF_IPL_2025_BATTERS.pdf` – PDF report summarizing results and interpretations. [page:14][file:17]  
+- `LICENSE` – MIT License for this project. [page:14]  
 
-A PDF report ANALYSIS_OF_IPL_2025_BATTERS.pdf summarizes these results with narrative explanations and figure descriptions.
+## Getting Started
 
-Main Findings
-PBKS recorded the highest total runs (3000) with the top average strike rate (144.91), indicating the strongest overall batting lineup.
-
-GT and LSG showed strong and consistent batting performance, while KKR posted the lowest total runs (1886).
-
-Sai Sudharsan emerged as the standout batter of the tournament with 759 runs.
-
-There is a clear positive correlation between balls faced and runs scored, but strike rate differences show varied batting approaches across players.
-
-RCB hit the most fifties (22), and SRH scored the most centuries (3), reflecting contrasting scoring strengths.
-
-Files in this Repository
-ANALYSIS_OF_IPL_2025_BATTERS.csv – IPL 2025 batting dataset for 200 players.
-
-ANALYSIS_OF_IPL_2025_BATTERS.ipynb – Jupyter notebook containing the full analysis and visualizations.
-
-ANALYSIS_OF_IPL_2025_BATTERS.pdf – Written report summarizing methodology, plots, and key insights.
-
-LICENSE – MIT License for this project.
-
-How to Run
-Clone the repository:
-git clone https://github.com/arvind14322/ANALYSIS_OF_IPL_2025_BATTERS.git
-
-Open the notebook in Jupyter or VS Code.
-
-Install required Python libraries (for example: pandas, numpy, matplotlib, seaborn) if needed.
-
-Run all cells in ANALYSIS_OF_IPL_2025_BATTERS.ipynb to reproduce the analysis and plots.
-
-Author
-Name: Nayini Aravind
-
-Project: Analysis of IPL 2025 Batters# ANALYSIS_OF_IPL_2025_BATTERS
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/arvind14322/ANALYSIS_OF_IPL_2025_BATTERS.git
+   ```
+2. Open `ANALYSIS_OF_IPL_2025_BATTERS.ipynb` in Jupyter Notebook, JupyterLab
